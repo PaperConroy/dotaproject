@@ -8,19 +8,82 @@
 </head>
 <body>
     <h1>Form</h1>
-    <form action="/dota2">
+    <form action="/username">
 
         <p>
         <label for="username">Enter Username:</label>
-        <input id="username" type="text" placeholder="Username">
+        <input id="username" type="text" placeholder="username" name="username"  minlength="3" maxlength="20" required>
         </p>
 
         <p>
         <label for="password">Enter Password:</label>
-        <input id="password" type="password" placeholder="Password">
+        <input id="password" type="password" placeholder="password" name="password" minlength="3" maxlength="20" required>
         </p>
 
         <button>Submit</button>
     </form>
+    <br>
+    <hr>
+    <h2>Search Seeing</h2>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+    <input type="text" name="q">
+    <button>Search Google</button>
+    </form>
+    <br>
+    <h3>Search Reddit</h3>
+    <form action="https://reddit.com/search">
+    <input type="text" name="q">
+    <button>Search Reddit</button>
+    </form>
+    <br>
+    <h3>Search Youtube</h3>
+    <form action="https://youtube.com/results">
+    <input type="text" name="search_query">
+    <button>Search Youtube</button>
+    </form>
+    <br>
+    <hr>
+
+    <h2>Other Inputs</h2>
+    <form action="/dota2">
+    <input type="checkbox" name="agree_tos" id="agree">
+    <label for="agree">I agree to everything</label>
+    <p>
+    <label for="hero">Select A Dota Hero</label>
+    <br>
+    <select name="hero" id="hero" required>
+        <option value=""></option>
+        <option value="Juggernaut">Juggernaut</option>
+        <option value="Witch Doctor">Witch Doctor</option>
+        <option value="Zeus">Zeus</option>
+        <option value="Wraith King">Wraith King</option>
+    </select>
+    </p>
+    <p>
+        <label for="volume">Turn that shit down!</label>
+        <br>
+        <input type="range" id="volume" min="0" max="100" name="volume">
+    </p>
+    <p>
+        <label for="requests">Any Hero You Want On the List?</label>
+        <br>
+        <textarea name="requests" id="requests" cols="30" rows="10"></textarea>
+    </p>
+    <button>Submit</button>
+    </form>
+    <br>
+    <hr>
+    <h2>Enter Your Name</h2>
+    <form action="/names">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <br>
+        <label for="last">Enter Last Name</label>
+        <input type="text" name="last" id="last" required>
+        <br>
+        <button>Submit</button>
+    </form>
+
 </body>
 </html>
