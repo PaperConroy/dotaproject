@@ -1,0 +1,19 @@
+h1 {
+color: orange;
+}
+
+h2  {
+    color: green;
+}
+
+h3 {
+    color: rgb(0, 0, 255);
+}
+
+ul {
+    color: rgb(204, 155, 204);
+}
+
+body {
+    background-color: #131516;
+}
