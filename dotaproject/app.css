@@ -1,19 +1,92 @@
 h1 {
-color: orange;
+color: #bc6c25;
+text-transform: uppercase;
+text-align: center;
+text-decoration: underline;
+letter-spacing: 2px;
+font-weight: 500;
+font-family: Arial, Helvetica, sans-serif; /*Font types going from left to right sans-serif acts as a last resort*/
 }
 
-h2  {
-    color: green;
+p {
+    color: #fefae0;
 }
 
-h3 {
-    color: rgb(0, 0, 255);
+figcaption {
+    text-align: center;
+    color: #fefae0;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
-ul {
-    color: rgb(204, 155, 204);
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:green;
+    text-decoration: underline;
+}
+
+img.avatar {
+    display:block;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px 0px orange;
+}
+
+p {
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.4;
+    animation-duration: 1s;
+    animation-name: normal;
+}
+
+@keyframes normal {
+  from {
+      margin-top: 100%;
+}
+}
+
+h2, h3  {
+    color: #dda15e;
+    text-align: center;
+}
+
 
 body {
     background-color: #131516;
+}
+
+.list { /* This is a class */
+    color: #fefae0;
+    text-align: left;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    
+}
+
+footer p {
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2::first-letter {
+    font-size: 25px;
+    color: green;
 }
