@@ -8,13 +8,43 @@ font-weight: 500;
 font-family: Arial, Helvetica, sans-serif; /*Font types going from left to right sans-serif acts as a last resort*/
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    padding: 1px;
+    border: #bc6c25 solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:hover {
+    color:green;
+    text-decoration: underline;
+    background-color: white
+}
+
+
 p {
-    color: #fefae0;
+    color: rgb(253, 244, 184);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+b:hover {
+    color:green;
+}
+
+i:hover {
+    color:#bc6c25
 }
 
 figcaption {
     text-align: center;
-    color: #fefae0;
+    color: rgb(253, 244, 184);
+}
+
+#unneeded {
+    padding: 5px;
+    text-align: center;
+    color: rgb(253, 244, 184);
     animation-duration: 3s;
     animation-name: slidein;
 }
@@ -31,9 +61,6 @@ figcaption {
   }
 }
 
-a {
-    text-decoration: none;
-}
 
 a:hover {
     color:green;
@@ -61,30 +88,42 @@ p {
 }
 
 h2, h3  {
-    color: #dda15e;
+    color: rgb(222, 165, 100);
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 
 body {
     background-color: #131516;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .list { /* This is a class */
-    color: #fefae0;
+    display: flex;
+    color: rgb(253, 244, 184);
+    padding: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
     text-align: left;
     text-align: center;
     display: table;
     margin: 0 auto;
-    
+    animation-duration: 3s;
+    animation-name: slidein;
+    letter-spacing: 1.2px;
 }
 
-footer p {
-    color: blue;
-    text-decoration: underline;
-    text-align: center;
-    font-weight: bold;
+.li:not(:last-child) {
+    margin-bottom: 20px;
 }
+
+li::before {
+ content: "\1F5E1";
+}
+
 
 h2::first-letter {
     font-size: 25px;
@@ -95,37 +134,89 @@ h2::first-letter {
  width: 200px;
  height: 200px;
  margin: auto;
- background: rgba(255, 255, 255, 1);
+ background-color: #222425;
  border-radius: 50%
 }
 
 .red {
+ text-align:center;
+ align-items: center; 
+ display: flex;
+ justify-content: center;
+
  width: 100px;
  height: 100px;
  background: rgba(255, 0, 0, 0.5);
  border-radius: 50%;
+
  position: relative;
  top: -190px;
  left: 50px;
+ color: white;
+
+ transition: 1s;
+}
+
+.red:hover {
+    background: rgba(255, 0, 0, 1) 
 }
 
 .blue {
+ text-align:center;
+ align-items: center; 
+ display: flex;
+ justify-content: center;
+
  width: 100px;
  height: 100px;
  background: rgba(0, 0, 255, 0.5);
  border-radius: 50%;
+
  position: relative;
  top: -30px;
  left: 10px;
+ color: white;
+
+ transition: 1s;
+}
+
+.blue:hover {
+    background: rgba(0, 0, 255, 1);
 }
 
 .green {
+ text-align:center;
+ align-items: center; 
+ display: flex;
+ justify-content: center;
+
  width: 100px;
  height: 100px;
  background: rgba(0, 255, 0, 0.5);
  border-radius: 50%;
+
  position: relative;
  top: 70px;
  left: 90px;
+ color: white;
+
+ transition: 1s;
 }
+
+.green:hover {
+    background-color: rgba(0, 255, 0, 1); 
+}
+
+.sword {
+    cursor: pointer;
+    position: fixed;
+    width: 90px;
+    top: 50px;
+    left: -20px;
+}
+
+.sword:nth-of-type(1) {
+    transform: rotate(255deg);
+}
+
 
