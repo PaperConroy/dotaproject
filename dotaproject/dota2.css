@@ -62,11 +62,6 @@ figcaption {
 }
 
 
-a:hover {
-    color:green;
-    text-decoration: underline;
-}
-
 img.avatar {
     display:block;
     margin: 0 auto;
